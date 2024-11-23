@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>UptownIndia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="coderthemes" name="author" />
+    
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="./assets/logo-32a719ff.png">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!--  Head js -->
+    
+  <script type="module" crossorigin src="./assets/index-1f2a3531.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/theme-82b34b71.js">
+  <link rel="modulepreload" crossorigin href="./assets/free-mode-0f3818b2.js">
+  <link rel="stylesheet" href="./assets/theme-ad662cff.css">
+</head>
+
+<body>
+    <div class="relative min-h-screen ">
+
+    <header id="header" class="sticky top-0 z-20 -mt-28 transition-all duration-300 ease-in-out">
+      <div class="container mx-auto flex items-center justify-between py-4 px-6 rounded-lg">
+        <!-- Left Section: Logo and Navigation -->
+        <nav class="flex items-center space-x-6">
+          <div class="flex items-center space-x-3">
+            <img src="./assets/logo-32a719ff.png" alt="Site Logo" class="h-20 w-20">
+          </div>
+          <div class="flex space-x-6">
+            <a href="#hero" class="text-custom-green-500 hover:underline">Home</a>
+            <a href="#shop" class="text-custom-green-500 hover:underline">Shop</a>
+            <a href="#about" class="text-custom-green-500 hover:underline">About</a>
+            <a href="#footer" class="text-custom-green-500 hover:underline">Contact</a>
+          </div>
+        
+        <!-- Hamburger Menu for Mobile -->
+        <button id="menu-toggle" class="block md:hidden focus:outline-none">
+          <svg class="w-8 h-8 text-custom-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+    
+    
+        </nav>
+        <!-- Right Section: Icons and Sign In -->
+        <div class="flex items-center space-x-6">
+          <!-- Wishlist Icon (Heart) -->
+          <div class="relative">
+            <svg class="h-10 w-10 bg-white p-2 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+            <span class="absolute top-0 right-0 bg-yellow-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span> <!-- Count Badge -->
+          </div>
+        
+          <!-- Cart Icon -->
+          <div class="relative">
+            <svg class="h-10 w-10 bg-white p-2 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zM7.12 4l1.2-2h9.35l1.17 2H21c.55 0 1 .45 1 1s-.45 1-1 1h-1l-3.6 7.59c-.08.17-.15.34-.22.51-.27.6-.89 1-1.58 1H8.37c-.68 0-1.31-.4-1.58-1-.07-.17-.14-.34-.22-.51L3 6H2c-.55 0-1-.45-1-1s.45-1 1-1h5.12zm4.5 9c.83 0 1.5-.67 1.5-1.5S12.45 10 11.62 10s-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
+            </svg>
+            <span class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">5</span> <!-- Count Badge -->
+          </div>
+        
+          <!-- User Icon -->
+          <div class="relative">
+            <svg class="h-10 w-10 bg-white p-2 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-2c0-2.66-5.33-4-8-4z" />
+            </svg>
+           
+          </div>
+        
+          <!-- Sign In -->
+      
+        </div>
+        
+        
+      </div>
+    
+    </header>
+    
+    
+    
+    
+    
+
+    <!-- Fullscreen Hero Section with Carousel -->
+    <section id="hero" class="relative w-full min-h-screen overflow-hidden">
+        <!-- Carousel Wrapper -->
+        <div class="carousel flex transition-transform duration-500 ease-in-out h-full" id="carousel">
+            <!-- Carousel Slide 1 -->
+            <div class="carousel-item flex-shrink-0 w-full h-full">
+                <img src="./assets/slide1-d01dc212.jpg" alt="Tea Image 1" class="w-full h-full object-cover" />
+            </div>
+            <!-- Carousel Slide 2 -->
+            <div class="carousel-item flex-shrink-0 w-full h-full">
+                <img src="./assets/slide2-5eea417c.jpg" alt="Tea Image 2" class="w-full h-full object-cover" />
+            </div>
+            <!-- Carousel Slide 3 -->
+            <div class="carousel-item flex-shrink-0 w-full h-full">
+                <img src="./assets/slide3-ba21ceeb.png" alt="Tea Image 3" class="w-full h-full object-cover" />
+            </div>
+        </div>
+    
+        <!-- Carousel Controls (Vertical on the Right) -->
+        <div class="absolute right-5 top-1/3 transform -translate-y-1/2 flex flex-col space-y-4 z-30">
+            <button class="w-10 h-10 bg-custom-green rounded-full hover:bg-custom-yellow" onclick="changeSlide(0)"></button>
+            <button class="w-10 h-10 bg-custom-green rounded-full hover:bg-custom-yellow" onclick="changeSlide(1)"></button>
+            <button class="w-10 h-10 bg-custom-green rounded-full hover:bg-custom-yellow" onclick="changeSlide(2)"></button>
+        </div>
+    </section>
+
+    
+        
+
+    <section id="about" class="bg-[#fffbf3] py-16 flex items-center justify-center">
+       
+            <div class="container mx-auto flex items-center justify-between py-4 px-6 rounded-lg">
+         
+            <!-- Text Content -->
+            <div class="w-full lg:w-[366px] flex flex-col gap-[39px] text-center lg:text-left">
+              <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-[17px]">
+                  <span class="font-normal text-[16px] leading-[27px] text-[#1d1d1c]">About</span>
+                  <div class="flex flex-col gap-[25px]">
+                    <span class="font-antonio font-bold text-[48px] leading-[60px] capitalize text-[#2f604a]">
+                      Explore our delightful variety of teas
+                    </span>
+                  </div>
+                </div>
+                <span class="font-normal text-[16px] leading-[27px] text-[#1d1d1c]">
+                  Indulge in our selection of delicious teas, from the bold Masala Chai to refreshing Strawberry Chai and indulgent Chocolate Chai. Each brew is crafted with premium ingredients to satisfy your cravings, whether you're in the mood for something spicy, fruity, or sweet.
+                </span>
+              </div>
+              <div class="w-full flex justify-center lg:justify-start">
+                <button class="w-[186px] h-[52px] flex justify-center items-center bg-[#2f604a] text-[#fefefe] text-[16px] font-bold rounded-[30px]">
+                  Order Now
+                </button>
+              </div>
+            </div>
+      
+            <!-- Image Content -->
+            <div class="w-full lg:w-[857px] flex flex-wrap lg:flex-nowrap items-center gap-[15px] justify-center">
+              <!-- First Image -->
+              <div class="w-[276px] h-[491px]">
+                <img src="./assets/about1-60066a5e.png" alt="Image 1" class="w-full h-full object-cover rounded-lg" />
+              </div>
+      
+              <!-- Second Image -->
+              <div class="w-[276px] h-[491px] pt-[55px]">
+                <img src="./assets/about2-5c04ba12.png" alt="Image 2" class="w-full h-full object-cover rounded-lg" />
+              </div>
+      
+              <!-- Third Image -->
+              <div class="w-[276px] h-[491px]">
+                <img src="./assets/about3-442680b8.png" alt="Image 3" class="w-full h-full object-cover rounded-lg" />
+              </div>
+            </div>
+          </div>
+        
+      </section>
+      
+    
+
+    <section class="bg-[#f2b421] py-16 flex items-center justify-center">
+        <div class="container mx-auto flex items-center justify-center py-4 px-6 rounded-lg">
+          <div class="flex items-center gap-[81px]">
+            <!-- Card 1 -->
+            <div class="h-[347px] w-[357px] flex flex-col gap-2.5 bg-[#fffbf3] px-[27px] py-[63px] rounded-tr-[30px] rounded-bl-[30px]">
+              <div class="w-[302px] flex flex-col items-center">
+                <i class="fas fa-cart-plus text-4xl text-blue-500 mb-2"></i>
+                <div class="flex flex-col items-center gap-3 self-stretch h-[136px]">
+                  <span class="font-semibold text-[24px] leading-[72px] text-center capitalize text-[#2f604a]">YOUR ORDER</span>
+                  <span class="font-normal text-[14px] leading-[21px] text-center text-[#534f4f]">Place your order easily through our app or website. Just a few taps, and your favorite tea is on its way!</span>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="h-[347px] w-[357px] flex flex-col gap-2.5 bg-[#fffbf3] px-[27px] py-[62px] rounded-tr-[30px] rounded-bl-[30px]">
+              <div class="w-[302px] flex flex-col items-center">
+                <i class="fas fa-truck text-4xl text-green-500 mb-2"></i>
+                <div class="flex flex-col items-center gap-3 self-stretch">
+                  <span class="font-semibold text-[24px] leading-[72px] text-center capitalize text-[#2f604a]">WE DELIVER</span>
+                  <span class="font-normal text-[14px] leading-[21px] text-center text-[#534f4f]">Fast and reliable delivery, bringing your favorite tea straight to your door, freshly brewed and soothing.</span>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="h-[347px] w-[357px] flex flex-col gap-2.5 bg-[#fffbf3] px-[27px] py-[62px] rounded-tr-[30px] rounded-bl-[30px]">
+              <div class="w-[302px] flex flex-col items-center">
+                <i class="fas fa-box-open text-4xl text-yellow-500 mb-2"></i>
+                <div class="flex flex-col items-center gap-3 self-stretch">
+                  <span class="font-semibold text-[24px] leading-[72px] text-center capitalize text-[#2f604a]">ENJOY FRESH TEA</span>
+                  <span class="font-normal text-[14px] leading-[21px] text-center text-[#534f4f]">Savor the taste of freshly brewed, high-quality tea with every sip. We ensure every cup is a delight.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+        <section class="bg-[#fffff] py-16 flex items-center justify-center">
+                <div class="container mx-auto flex items-center justify-between py-4 px-6 rounded-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="font-antonio font-bold text-[48px] leading-[60px] capitalize text-[#2f604a] pb-10">A Brew For Every Taste</h2>
+                    <p class="text-lg mb-6">Delight in a variety of flavorful teas made from the finest ingredients. From the classic Paan Chai and Masala Chai to the indulgent Strawberry Chai, Mango Chai, and Chocolate Chai, each cup is crafted to perfection. Discover the taste that keeps our tea lovers coming back for more.</p>
+                    <ul class="list-none space-y-2 pb-8">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>Fresh Ingredients in every cup</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>Carefully crafted tea flavors</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>Satisfaction guaranteed</span>
+                        </li>
+                    </ul>
+                    <div class="w-[186px] h-[52px] flex justify-center items-center gap-2.5 bg-[#2f604a] px-[45px] py-[17px] rounded-[30px]"><span class="font-bold text-[16px] text-center text-[#fefefe]">Learn More</span></div>
+                </div>
+                <div>
+      
+                    <div class="grid">
+                        <div class="relative">
+                            <img src="./assets/collage-1437f84f.png" alt="Image 1" class="w-full h-full object-cover">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+    <section id="shop" class="bg-[#f2b421] py-16 flex justify-center items-center">
+
+        <div class="container mx-auto flex items-center justify-between py-4 px-6 rounded-lg">
+          
+            
+              <!-- Card 1 -->
+              <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center text-center w-[220px] h-[420px]">
+                <img src="./assets/product1-8daa87d7.png" alt="Card Image 1" class="h-[250px] w-[250px] mb-8">
+                <h3 class="font-semibold text-gray-800 mb-4">Chocolate Chai</h3>
+                <div class="w-[200px] h-[60px] flex justify-center items-center bg-[#2f604a] rounded-[30px]">
+                  <span class="text-[16px] text-center text-[#fefefe]">Add to Cart</span>
+                </div>
+              </div>
+      
+              <!-- Card 2 -->
+              <div class="bg-white rounded-lg shadow-lg p-2 flex flex-col items-center text-center w-[220px] h-[420px]">
+                <img src="./assets/product2-10523d4b.png" alt="Card Image 2" class="h-[250px] w-[250px] mb-8">
+                <h3 class="font-semibold text-gray-800 mb-4">Mango Chai</h3>
+                <div class="w-[200px] h-[60px] flex justify-center items-center bg-[#2f604a] rounded-[30px]">
+                  <span class="text-[16px] text-center text-[#fefefe]">Add to Cart</span>
+                </div>
+              </div>
+      
+              <!-- Card 3 -->
+              <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center text-center w-[220px] h-[420px]">
+                <img src="./assets/product3-51336bf9.png" alt="Card Image 3" class="h-[250px] w-[250px] mb-8">
+                <h3 class="font-semibold text-gray-800 mb-4">Masala Chai</h3>
+                <div class="w-[200px] h-[60px] flex justify-center items-center bg-[#2f604a] rounded-[30px]">
+                  <span class="text-[16px] text-center text-[#fefefe]">Add to Cart</span>
+                </div>
+              </div>
+      
+              <!-- Card 4 -->
+              <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center text-center w-[220px] h-[420px]">
+                <img src="./assets/product4-d7dfb7e3.png" alt="Card Image 4" class="h-[250px] w-[250px] mb-8">
+                <h3 class="font-semibold text-gray-800 mb-4">Paan Chai</h3>
+                <div class="w-[200px] h-[60px] flex justify-center items-center bg-[#2f604a] rounded-[30px]">
+                  <span class="text-[16px] text-center text-[#fefefe]">Add to Cart</span>
+                </div>
+              </div>
+      
+              <!-- Card 5 -->
+              <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center text-center w-[250px] h-[420px]">
+                <img src="./assets/product5-53e52b0d.png" alt="Card Image 5" class="h-[250px] w-[250px] mb-8">
+                <h3 class="font-semibold text-gray-800 mb-4">Strawberry Chai</h3>
+                <div class="w-[200px] h-[60px] flex justify-center items-center bg-[#2f604a] rounded-[30px]">
+                  <span class="text-[16px] text-center text-[#fefefe]">Add to Cart</span>
+                </div>
+              </div>
+            </div>
+      
+       
+      </section>
+      
+      
+      
+
+      <section class="bg-[#ffffff] py-16 flex flex-col justify-center items-center">
+        
+        <!-- Title Section -->
+        <div class="text-center mb-8">
+          <h2 class="text-[28px] font-semibold text-[#1f1e1e]">What Our Customers Say</h2>
+          <p class="text-[16px] text-[#6b6b6b] mt-2">Delighting tea lovers, one sip at a time!</p>
+        </div>
+      
+        <!-- Testimonials Section -->
+        <div class="flex items-start">
+          <div class="flex flex-col ">
+            <div class="flex items-center gap-4 self-stretch">
+              <div class="w-[81px] h-[81px]"><img class="w-[81px] h-[81px] object-cover" /></div>
+              <div class="flex flex-col gap-2 grow">
+                <span class="font-medium text-[16px] leading-[21px] text-[#1f1e1e]">Fatima A</span>
+                <span class="font-light text-[14px] leading-[15px] text-[#1f1e1e]">Tea Enthusiast</span>
+              </div>
+            </div>
+            <div class="w-[250px] flex flex-col">
+              <div class="flex items-center  self-stretch h-6">
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+              </div>
+              <div class="flex justify-center items-center gap-2.5 self-stretch p-2.5">
+                <span class="font-medium text-[16px] leading-[27px] text-[#1f1e1e]">The Masala Chai is an absolute delight! Perfect blend of spices and aroma. Highly recommend!</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-4 self-stretch">
+              <div class="w-[81px] h-[81px]"><img class="w-[81px] h-[81px] object-cover" /></div>
+              <div class="flex flex-col gap-2 grow">
+                <span class="font-medium text-[16px] leading-[21px] text-[#1f1e1e]">Zainab M</span>
+                <span class="font-light text-[14px] leading-[15px] text-[#1f1e1e]">Business Owner</span>
+              </div>
+            </div>
+            <div class="w-[335px] flex flex-col">
+              <div class="flex items-center gap-2 self-stretch h-6">
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+              </div>
+              <div class="flex justify-center items-center gap-2.5 self-stretch p-2.5">
+                <span class="font-medium text-[16px] leading-[27px] text-[#1f1e1e]">The Mango Chai is so refreshing! A perfect balance of fruity sweetness and classic tea flavors.</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col ">
+            <div class="flex items-center gap-4 self-stretch">
+              <div class="w-[81px] h-[81px]"><img class="w-[81px] h-[81px] object-cover" /></div>
+              <div class="flex flex-col gap-2 grow">
+                <span class="font-medium text-[16px] leading-[21px] text-[#1f1e1e]">Ahmed K</span>
+                <span class="font-light text-[14px] leading-[15px] text-[#1f1e1e]">Tea Lover</span>
+              </div>
+            </div>
+            <div class="w-[335px] flex flex-col">
+              <div class="flex items-center gap-2 self-stretch h-6">
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+              </div>
+              <div class="flex justify-center items-center gap-2.5 self-stretch p-2.5">
+                <span class="font-medium text-[16px] leading-[27px] text-[#1f1e1e]">The Chocolate Chai is pure indulgence! A rich, creamy treat for tea and chocolate lovers.</span>
+              </div>
+            </div>
+          </div>
+          <div class="lex flex-col">
+            <div class="flex items-center gap-4 self-stretch">
+              <div class="w-[81px] h-[81px]"><img class="w-[81px] h-[81px] object-cover" /></div>
+              <div class="flex flex-col gap-2 grow">
+                <span class="font-medium text-[16px] leading-[21px] text-[#1f1e1e]">Ronith</span>
+                <span class="font-light text-[14px] leading-[15px] text-[#1f1e1e]">Tea Lover</span>
+              </div>
+            </div>
+            <div class="w-[335px] flex flex-col">
+              <div class="flex items-center gap-2 self-stretch h-6">
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+                <div class="w-6 h-6">
+                  <svg class="w-[15.114999771118164px] h-[14.366000175476074px] text-[#f4bd27]"></svg>
+                </div>
+              </div>
+              <div class="flex justify-center items-center gap-2.5 self-stretch p-2.5">
+                <span class="font-medium text-[16px] leading-[27px] text-[#1f1e1e]">The Strawberry Chai is pure indulgence! A sweet, fruity treat that perfectly balances the freshness of strawberries with the richness of tea.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+  
+
+
+    <section id="footer" class="bg-[#12332a] py-16 flex flex-col justify-center items-center">
+        <div class="container mx-auto flex items-center justify-center py-4 px-6 rounded-lg">
+          <div class="flex items-end gap-[102px] self-stretch h-[341px]">
+              <div class="h-[341px] w-[338px] flex flex-col gap-[22px]">
+                  <div class="flex flex-col gap-[15px] self-stretch h-[111px]">
+                      <div class="w-[100px] h-[100px] flex items-center gap-[7px]"><img src="./assets/logo-32a719ff.png"  ></img>
+                      </div><span class="font-medium text-[16px] leading-[22px] text-[#ffffff]">Stay connected with UptownIndia for the latest updates, exclusive offers, and delicious inspiration delivered straight to your inbox.</span></div>
+                  <div class="w-[231.00100708007812px] flex flex-col justify-end gap-[11px]"></div>
+              </div>
+              <div class="h-[272px] flex items-center gap-[97px]">
+                  <div class="h-[234px] w-[122px] flex flex-col gap-[9px]"><span class="font-semibold text-[16px] leading-[28px] text-[#ffffff]">ABOUT US</span><span class="font-normal text-base text-[#ffffff]">Menu</span><span class="font-normal text-base text-[#ffffff]">Contact</span></div>
+                  <div class="h-[234px] flex items-center gap-[120px]">
+                      <div class="h-[234px] w-[191px] flex flex-col gap-[9px]"><span class="font-semibold text-[16px] leading-[28px] text-[#ffffff]">SOCIAL MEDIA</span><span class="font-normal text-base text-[#ffffff]">Facebook</span><span class="font-normal text-base text-[#ffffff]">Instagram</span><span class="font-normal text-base text-[#ffffff]">Twitter</span>
+                          <span
+                          class="font-normal text-base text-[#ffffff]">Youtube</span><span class="font-normal text-base text-[#ffffff]">Linkedin</span></div>
+                  </div>
+                  <div class="h-[272px] w-80 flex flex-col gap-5"><span class="font-semibold text-[16px] leading-[28px] text-[#ffffff]">INSTAGRAM</span>
+                      <div class="flex flex-col gap-2 self-stretch">
+                          <div class="flex items-center gap-2.5 self-stretch">
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                          </div>
+                          <div class="flex items-center gap-2.5 self-stretch">
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <span class="font-normal text-[14px] leading-[24px] text-center text-[#ffffff]">Copyright © 2024 All rights reserved</span></div>
+    </section>
+
+    </div>
+
+    
+    
+
+    <script>
+       let currentSlide = 0;
+    const totalSlides = 3;
+    const buttons = document.querySelectorAll('.absolute button');
+
+    function changeSlide(index) {
+        // Update the carousel's current position
+        const carousel = document.getElementById('carousel');
+        const slideWidth = carousel.offsetWidth;
+        carousel.style.transform = `translateX(-${index * slideWidth}px)`;
+
+        // Update active button
+        currentSlide = index;
+        updateActiveButton();
+    }
+
+    function updateActiveButton() {
+        // Remove 'active' class from all buttons
+        buttons.forEach(button => {
+            button.classList.remove('active');
+        });
+
+        // Add 'active' class to the current button
+        buttons[currentSlide].classList.add('active');
+    }
+
+    // Initialize the first slide as active
+    updateActiveButton();
+// Automatically slide every 3 seconds
+setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides; // Loop through slides
+        changeSlide(currentSlide);
+    }, 3000); // 3000 milliseconds = 3 seconds
+
+         // JavaScript to add blur effect to the header on scroll
+  window.onscroll = function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+      header.classList.add('backdrop-blur-md'); // Add blur when scrolled
+    } else {
+      header.classList.remove('backdrop-blur-md'); // Remove blur when at top
+    }
+  };
+      </script>
+
+<style>
+    .absolute button.active {
+        background-color: #FFD064; /* Highlighted background color (custom green) */
+        transform: scale(1.1); /* Optional: Slightly enlarge the active button */
+    }
+
+    .carousel {
+    transition: transform 1s ease-in-out; /* Smooth slide transition */
+}
+
+
+</style>
+</body>
+
+</html>

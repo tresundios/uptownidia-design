@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Yum - Multipurpose Food Tailwind CSS Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="coderthemes" name="author" />
+    
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="./assets/favicon-c43f27ef.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Dropzone Plugin Css -->
+    <!--    <link href="assets/libs/dropzone/dropzone.css" rel="stylesheet" type="text/css">-->
+
+    <!--  Head js -->
+    
+
+  <script type="module" crossorigin src="./assets/theme-82b34b71.js"></script>
+  <link rel="stylesheet" href="./assets/theme-ad662cff.css">
+</head>
+
+<body>
+    <header id="header" class="sticky top-0 z-20 -mt-28 transition-all duration-300 ease-in-out">
+      <div class="container mx-auto flex items-center justify-between py-4 px-6 rounded-lg">
+        <!-- Left Section: Logo and Navigation -->
+        <nav class="flex items-center space-x-6">
+          <div class="flex items-center space-x-3">
+            <img src="./assets/logo-32a719ff.png" alt="Site Logo" class="h-20 w-20">
+          </div>
+          <div class="flex space-x-6">
+            <a href="#hero" class="text-custom-green-500 hover:underline">Home</a>
+            <a href="#shop" class="text-custom-green-500 hover:underline">Shop</a>
+            <a href="#about" class="text-custom-green-500 hover:underline">About</a>
+            <a href="#footer" class="text-custom-green-500 hover:underline">Contact</a>
+          </div>
+        
+        <!-- Hamburger Menu for Mobile -->
+        <button id="menu-toggle" class="block md:hidden focus:outline-none">
+          <svg class="w-8 h-8 text-custom-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+    
+    
+        </nav>
+        <!-- Right Section: Icons and Sign In -->
+        <div class="flex items-center space-x-6">
+          <!-- Wishlist Icon (Heart) -->
+          <div class="relative">
+            <svg class="h-10 w-10 bg-white p-2 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+            <span class="absolute top-0 right-0 bg-yellow-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span> <!-- Count Badge -->
+          </div>
+        
+          <!-- Cart Icon -->
+          <div class="relative">
+            <svg class="h-10 w-10 bg-white p-2 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zM7.12 4l1.2-2h9.35l1.17 2H21c.55 0 1 .45 1 1s-.45 1-1 1h-1l-3.6 7.59c-.08.17-.15.34-.22.51-.27.6-.89 1-1.58 1H8.37c-.68 0-1.31-.4-1.58-1-.07-.17-.14-.34-.22-.51L3 6H2c-.55 0-1-.45-1-1s.45-1 1-1h5.12zm4.5 9c.83 0 1.5-.67 1.5-1.5S12.45 10 11.62 10s-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
+            </svg>
+            <span class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">5</span> <!-- Count Badge -->
+          </div>
+        
+          <!-- User Icon -->
+          <div class="relative">
+            <svg class="h-10 w-10 bg-white p-2 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-2c0-2.66-5.33-4-8-4z" />
+            </svg>
+           
+          </div>
+        
+          <!-- Sign In -->
+      
+        </div>
+        
+        
+      </div>
+    
+    </header>
+    
+    
+    
+    
+    
+
+    <section class="lg:flex items-center hidden bg-default-400/10 h-14">
+        <div class="container">
+            <div class="flex items-center">
+                <ol aria-label="Breadcrumb" class="flex items-center whitespace-nowrap min-w-0 gap-2">
+                    <li class="text-sm">
+                        <a class="flex items-center gap-2 align-middle text-default-800 transition-all leading-none hover:text-primary-500" href="javascript:void(0)">
+                            <i class="w-4 h-4" data-lucide="home"></i>
+                            Home
+                            <i class="w-4 h-4" data-lucide="chevron-right"></i>
+                        </a>
+                    </li>
+    
+    
+                    <li aria-current="page" class="text-sm font-medium text-primary truncate leading-none hover:text-primary-500">
+                        Checkout
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section class="lg:py-10 py-6">
+        <div class="container">
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-6">
+                <div class="lg:col-span-2 col-span-1">
+                    <div class="mb-8">
+                        <h4 class="text-lg font-medium text-default-800 mb-6">Billing Information</h4>
+
+                        <div class="grid lg:grid-cols-4 gap-6">
+                            <div>
+                                <label for="userName" class="block text-sm text-default-700 mb-2">User name</label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="First Name">
+                            </div>
+
+                            <div>
+                                <label for="userName" class="block text-sm text-default-700 mb-2">&nbsp;</label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="Last name">
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <label for="userName" class="block text-sm text-default-700 mb-2">Company Name <span class="text-default-500">(Optional)</span> </label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="Company Name">
+                            </div>
+
+                            <div class="lg:col-span-4">
+                                <label for="userName" class="block text-sm text-default-700 mb-2">Address </label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="Enter your address">
+                            </div>
+
+                            <div>
+                                <label for="country" class="block text-sm text-default-700 mb-2">Country</label>
+                                <select id="country" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200 focus:ring-transparent focus:border-default-200">
+                                    <option value="United States" selected>United States</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="China">China</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Bharat">Bharat</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="France">France</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Albania">Albania</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="state" class="block text-sm text-default-700 mb-2">Region/State</label>
+                                <select id="state" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200 focus:ring-transparent focus:border-default-200">
+                                    <option value="Alabama" selected>Alabama</option>
+                                    <option value="Alaska">Alaska</option>
+                                    <option value="Arizona">Arizona</option>
+                                    <option value="Arkansas">Arkansas</option>
+                                    <option value="California">California</option>
+                                    <option value="Colorado">Colorado</option>
+                                    <option value="Connecticut">Connecticut</option>
+                                    <option value="Delaware">Delaware</option>
+                                    <option value="Florida">Florida</option>
+                                    <option value="Indiana">Indiana</option>
+                                    <option value="Iowa">Iowa</option>
+                                    <option value="Kansas">Kansas</option>
+                                    <option value="Kentucky">Kentucky</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="city" class="block text-sm text-default-700 mb-2">City</label>
+                                <select id="city" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200 focus:ring-transparent focus:border-default-200">
+                                    <option value="Alexander" selected>Alexander City</option>
+                                    <option value="Andalusia">Andalusia</option>
+                                    <option value="Anniston">Anniston</option>
+                                    <option value="Athens">Athens</option>
+                                    <option value="Atmore">Atmore</option>
+                                    <option value="Auburn">Auburn</option>
+                                    <option value="Chickasaw">Chickasaw</option>
+                                    <option value="Clanton">Clanton</option>
+                                    <option value="Demopolis">Demopolis</option>
+                                    <option value="Guntersville">Guntersville</option>
+                                    <option value="Huntsville">Huntsville</option>
+                                    <option value="Jasper">Jasper</option>
+                                    <option value="Marion">Marion</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="userName" class="block text-sm text-default-700 mb-2">Zip Code</label>
+                                <select name="" id="" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200 focus:ring-transparent focus:border-default-200" placeholder="Select...">
+                                    <option value="35010" selected>35010</option>
+                                    <option value="35011">35011</option>
+                                    <option value="35012">35012</option>
+                                    <option value="35013">35013</option>
+                                    <option value="35014">35014</option>
+                                </select>
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <label for="userName" class="block text-sm text-default-700 mb-2">Email </label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="example@example.com">
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <label for="userName" class="block text-sm text-default-700 mb-2">Phone Number </label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="+1  123-XXX-7890">
+                            </div>
+
+                            <div class="flex items-center">
+                                <input id="shipmentAddress" class="text-primary w-5 h-5 rounded border-default-200 focus:ring-0 bg-transparent" type="checkbox" placeholder="+1  123-XXX-7890">
+                                <label for="shipmentAddress" class="block text-sm text-default-700 ms-2">Ship into different address </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h4 class="text-lg font-medium text-default-800 mb-6">Payment Option</h4>
+
+                        <div class="border border-default-200 rounded-lg p-6 lg:w-5/6 mb-5">
+                            <div class="grid lg:grid-cols-4 grid-cols-2">
+                                <div class="text-center p-6">
+                                    <label for="paymentCOD" class="flex flex-col items-center justify-center mb-4">
+                                        <i data-lucide="dollar-sign" class="text-primary mb-4"></i>
+                                        <h5 class="text-sm font-medium text-default-700">Cash on Delivery</h5>
+                                    </label>
+                                    <input id="paymentCOD" class="text-primary w-5 h-5 bg-transparent border-default-200 focus:ring-0" type="radio" name="paymentOption" checked>
+                                </div>
+
+                                <div class="text-center p-6">
+                                    <label for="paymentPaypal" class="flex flex-col items-center justify-center mb-4">
+                                        <img src="./assets/paypal-2-80f6ebd0.svg" class="w-6 h-6 mb-4">
+                                        <h5 class="text-sm font-medium text-default-700">Paypal</h5>
+                                    </label>
+                                    <input id="paymentPaypal" class="text-primary w-5 h-5 bg-transparent border-default-200 focus:ring-0" type="radio" name="paymentOption">
+                                </div>
+
+                                <div class="text-center p-6">
+                                    <label for="paymentAmazonPay" class="flex flex-col items-center justify-center mb-4">
+                                        <img src="./assets/amazon-b4e0cd8f.svg" class="w-6 h-6 mb-4">
+                                        <h5 class="text-sm font-medium text-default-700">Amazon Pay</h5>
+                                    </label>
+                                    <input id="paymentAmazonPay" class="text-primary w-5 h-5 bg-transparent border-default-200 focus:ring-0" type="radio" name="paymentOption">
+                                </div>
+
+                                <div class="text-center p-6">
+                                    <label for="paymentCard" class="flex flex-col items-center justify-center mb-4">
+                                        <i data-lucide="credit-card" class="text-primary mb-4"></i>
+                                        <h5 class="text-sm font-medium text-default-700">Debid/Credit Card</h5>
+                                    </label>
+                                    <input id="paymentCard" class="text-primary w-5 h-5 bg-transparent border-default-200 focus:ring-0" type="radio" name="paymentOption">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid lg:grid-cols-2 gap-6">
+                            <div class="lg:col-span-2">
+                                <label for="userName" class="block text-sm text-default-700 mb-2">Name on Card</label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="Enter card holder name">
+                            </div>
+
+                            <div class="lg:col-span-2">
+                                <label for="userName" class="block text-sm text-default-700 mb-2">Card Number</label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="Enter card number">
+                            </div>
+
+                            <div>
+                                <label for="userName" class="block text-sm text-default-700 mb-2">Expire Date</label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="DD/YY">
+                            </div>
+
+                            <div>
+                                <label for="userName" class="block text-sm text-default-700 mb-2">CVC</label>
+                                <input id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-full py-2.5 px-4 border border-default-200" type="text" placeholder="Enter CVV number">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-medium text-default-800 mb-6">Additional Information</h4>
+
+                        <div>
+                            <label for="userName" class="block text-sm text-default-700 mb-2">Company Name <span class="text-default-500">(Optional)</span></label>
+                            <textarea id="userName" class="block w-full bg-transparent dark:bg-default-50 rounded-lg py-2.5 px-4 border border-default-200" rows="4" type="text" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <div class="border border-default-200 rounded-lg p-5">
+                        <h4 class="text-lg font-semibold text-default-700 mb-5">Order Summary</h4>
+                        <div class="flex items-center mb-4">
+                            <img src="./assets/onion-rings-6902e6d8.png" class="h-20 w-20 me-2">
+                            <div>
+                                <h4 class="text-sm text-default-600 mb-2">Onion Rings</h4>
+                                <h4 class="text-sm text-default-400">1 x <span class="text-primary font-semibold">$29</span></h4>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <img src="./assets/burrito-bowl-79a7c64f.png" class="h-20 w-20 me-2">
+                            <div>
+                                <h4 class="text-sm text-default-600 mb-2">Burrito Bowl</h4>
+                                <h4 class="text-sm text-default-400">3 x <span class="text-primary font-semibold">$50</span></h4>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <img src="./assets/garlic-herb-bread-8a00951d.png" class="h-20 w-20 me-2">
+                            <div>
+                                <h4 class="text-sm text-default-600 mb-2">Garlic & Herb Bread</h4>
+                                <h4 class="text-sm text-default-400">2 x <span class="text-primary font-semibold">$42</span></h4>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mb-4">
+                            <img src="./assets/red-velvet-pastry-b09214ba.png" class="h-20 w-20 me-2">
+                            <div>
+                                <h4 class="text-sm text-default-600 mb-2">Red Velvet Pastry</h4>
+                                <h4 class="text-sm text-default-400">1 x <span class="text-primary font-semibold">$68</span></h4>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-3">
+                                <p class="text-sm text-default-500">Sub-total</p>
+                                <p class="text-sm text-default-700 font-medium">$320</p>
+                            </div>
+                            <div class="flex justify-between mb-3">
+                                <p class="text-sm text-default-500">Shipping</p>
+                                <p class="text-sm text-default-700 font-medium">Free</p>
+                            </div>
+                            <div class="flex justify-between mb-3">
+                                <p class="text-sm text-default-500">Discount</p>
+                                <p class="text-sm text-default-700 font-medium">$24</p>
+                            </div>
+                            <div class="flex justify-between mb-3">
+                                <p class="text-sm text-default-500">Tax</p>
+                                <p class="text-sm text-default-700 font-medium">$61.99</p>
+                            </div>
+                            <div class="border-b border-default-200 my-4"></div>
+                            <div class="flex justify-between mb-3">
+                                <p class="text-base text-default-700">Total</p>
+                                <p class="text-base text-default-700 font-medium">$357.99 USD</p>
+                            </div>
+                        </div>
+
+                        <button class="w-full inline-flex items-center justify-center rounded-full border border-primary bg-primary px-10 py-3 text-center text-sm font-medium text-white shadow-sm transition-all duration-500 hover:bg-primary-500">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer" class="bg-[#12332a] py-16 flex flex-col justify-center items-center">
+        <div class="container mx-auto flex items-center justify-center py-4 px-6 rounded-lg">
+          <div class="flex items-end gap-[102px] self-stretch h-[341px]">
+              <div class="h-[341px] w-[338px] flex flex-col gap-[22px]">
+                  <div class="flex flex-col gap-[15px] self-stretch h-[111px]">
+                      <div class="w-[100px] h-[100px] flex items-center gap-[7px]"><img src="./assets/logo-32a719ff.png"  ></img>
+                      </div><span class="font-medium text-[16px] leading-[22px] text-[#ffffff]">Stay connected with UptownIndia for the latest updates, exclusive offers, and delicious inspiration delivered straight to your inbox.</span></div>
+                  <div class="w-[231.00100708007812px] flex flex-col justify-end gap-[11px]"></div>
+              </div>
+              <div class="h-[272px] flex items-center gap-[97px]">
+                  <div class="h-[234px] w-[122px] flex flex-col gap-[9px]"><span class="font-semibold text-[16px] leading-[28px] text-[#ffffff]">ABOUT US</span><span class="font-normal text-base text-[#ffffff]">Menu</span><span class="font-normal text-base text-[#ffffff]">Contact</span></div>
+                  <div class="h-[234px] flex items-center gap-[120px]">
+                      <div class="h-[234px] w-[191px] flex flex-col gap-[9px]"><span class="font-semibold text-[16px] leading-[28px] text-[#ffffff]">SOCIAL MEDIA</span><span class="font-normal text-base text-[#ffffff]">Facebook</span><span class="font-normal text-base text-[#ffffff]">Instagram</span><span class="font-normal text-base text-[#ffffff]">Twitter</span>
+                          <span
+                          class="font-normal text-base text-[#ffffff]">Youtube</span><span class="font-normal text-base text-[#ffffff]">Linkedin</span></div>
+                  </div>
+                  <div class="h-[272px] w-80 flex flex-col gap-5"><span class="font-semibold text-[16px] leading-[28px] text-[#ffffff]">INSTAGRAM</span>
+                      <div class="flex flex-col gap-2 self-stretch">
+                          <div class="flex items-center gap-2.5 self-stretch">
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                          </div>
+                          <div class="flex items-center gap-2.5 self-stretch">
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                              <div class="w-[100px] h-[94px] bg-[#c4c4c4]"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <span class="font-normal text-[14px] leading-[24px] text-center text-[#ffffff]">Copyright © 2024 All rights reserved</span></div>
+    </section>
+
+    
+</body>
+
+</html>
